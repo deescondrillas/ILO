@@ -1,251 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juntos Logramos Metas</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos logramos metas</title>
+    <meta name="description" content="Combatimos la deserción escolar en México con acompañamiento integral académico, psicológico y económico.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-container">
-    <!-- Navigation -->
-    <nav class="navbar">
-      <button class="nav-tab active" data-page="homepage">homepage</button>
-      <button class="nav-tab" data-page="videos">videos</button>
-      <button class="nav-tab" data-page="materials">materials</button>
-    </nav>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-      <!-- Homepage -->
-      <section id="homepage" class="page active">
-        <div class="hero-section">
-          <div class="hero-image-container">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=600&fit=crop" alt="Estudiantes colaborando juntos" class="hero-image">
-            <div class="hero-overlay">
-              <h1 class="hero-title">Juntos Logramos Metas</h1>
-            </div>
-          </div>
+  <!-- ===== NAV ===== -->
+    <header>
+        <nav class="nav" aria-label="Navegación principal">
+            <p class="nav-logo">Juntos logramos metas</p>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="material.html">Material</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <main>
+        <section class="hero" aria-label="Portada">
+
+      <!-- Background video -->
+        <div class="hero-video-wrap" aria-hidden="true">
+            <video
+                class="hero-video"
+                src="assets/background.mov"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                aria-hidden="true"
+            ></video>
         </div>
 
-        <div class="content-section">
-          <div class="text-area">
-            <h2 class="section-title">Nuestra Misión</h2>
-            <div class="text-content">
-              <p><strong>Misión:</strong> Somos un proyecto educativo social comprometido con la reducción del abandono escolar en estudiantes de secundaria y preparatoria en México. Trabajamos para crear oportunidades de aprendizaje accesibles, motivadoras y significativas que inspiren a los jóvenes a continuar su formación académica.</p>
+      <!-- Cinematic directional overlay -->
+        <div class="hero-overlay" aria-hidden="true"></div>
 
-              <p><strong>Visión:</strong> Aspiramos a ser un referente nacional en la prevención del abandono escolar, construyendo comunidades educativas resilientes donde cada estudiante tenga las herramientas, el apoyo y la motivación necesarios para alcanzar sus metas académicas y personales.</p>
+      <!-- Scroll-driven fog veil (opacity animated by JS) -->
+        <div class="hero-fog-veil" aria-hidden="true"></div>
 
-              <h3>Nuestros Valores</h3>
-              <ul>
-                <li><strong>Compromiso:</strong> Dedicación constante hacia el bienestar educativo de cada estudiante.</li>
-                <li><strong>Inclusión:</strong> Creemos que todos los jóvenes merecen oportunidades equitativas de educación.</li>
-                <li><strong>Colaboración:</strong> Trabajamos juntos con familias, escuelas y comunidades.</li>
-                <li><strong>Innovación:</strong> Buscamos nuevas formas de hacer la educación más accesible y atractiva.</li>
-                <li><strong>Empatía:</strong> Entendemos los desafíos que enfrentan nuestros estudiantes.</li>
-              </ul>
-
-              <h3>¿Por qué es importante?</h3>
-              <p>En México, miles de estudiantes abandonan sus estudios cada año debido a factores económicos, sociales y personales. Nuestro proyecto busca ser un puente que conecte a estos jóvenes con recursos, mentoría y apoyo emocional para que puedan superar los obstáculos y continuar su camino educativo.</p>
-
-              <p>A través de videos educativos, materiales de apoyo y una comunidad solidaria, trabajamos día a día para que ningún estudiante se quede atrás. Juntos, verdaderamente logramos metas.</p>
-            </div>
-          </div>
-
-          <div class="decorative-blocks">
-            <div class="deco-block deco-1"></div>
-            <div class="deco-block deco-2"></div>
-          </div>
+      <!-- Content -->
+        <div class="hero-content">
+            <p class="hero-eyebrow" aria-label="Categoría">
+                <span class="hero-eyebrow-line" aria-hidden="true"></span>
+                Educación · México
+            </p>
+            <h1 class="hero-title">Juntos logramos metas</h1>
+            <p class="hero-lead">
+                Nos dedicamos a combatir la deserción escolar en los niveles de secundaria
+                y preparatoria mediante un modelo de acompañamiento integral que abarca
+                las áreas académica, psicológica y económica.
+            </p>
         </div>
-      </section>
 
-      <!-- Videos Page -->
-      <section id="videos" class="page">
-        <h2 class="page-title">Videos Educativos</h2>
-        <p class="page-subtitle">Explora nuestra colección de contenido educativo diseñado para apoyar tu aprendizaje</p>
-
-        <div class="videos-grid">
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Motivación para estudiantes"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Motivación para Estudiantes</h3>
-              <p>Descubre técnicas efectivas para mantener la motivación durante tu trayectoria escolar y superar los momentos difíciles.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Técnicas de estudio"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Técnicas de Estudio Efectivas</h3>
-              <p>Aprende métodos probados para mejorar tu concentración, retención y rendimiento académico.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Manejo del tiempo"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Manejo del Tiempo</h3>
-              <p>Organiza tu día de manera eficiente para balancear estudios, actividades personales y descanso.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Apoyo emocional"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Bienestar Emocional</h3>
-              <p>Estrategias para cuidar tu salud mental y manejar el estrés durante la etapa escolar.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Historias de éxito"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Historias de Éxito</h3>
-              <p>Conoce las experiencias inspiradoras de estudiantes que superaron obstáculos para alcanzar sus metas.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <div class="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Orientación vocacional"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-info">
-              <h3>Orientación Vocacional</h3>
-              <p>Explora diferentes carreras y opciones profesionales para planificar tu futuro académico.</p>
-            </div>
-          </article>
+      <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span class="hero-scroll-label">Explora</span>
+            <div class="hero-scroll-line"></div>
         </div>
-      </section>
 
-      <!-- Materials Page -->
-      <section id="materials" class="page">
-        <h2 class="page-title">Materiales de Apoyo</h2>
-        <p class="page-subtitle">Descarga recursos educativos gratuitos para complementar tu aprendizaje</p>
+    </section>
 
-        <div class="materials-container">
-          <div class="pdf-preview-card">
-            <div class="pdf-header">
-              <div class="pdf-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/>
-                  <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
-                </svg>
-              </div>
-              <div class="pdf-title-info">
-                <h3>Guía de Técnicas de Estudio</h3>
-                <span class="pdf-meta">PDF • 2.4 MB • 15 páginas</span>
-              </div>
+    <!-- ===== FOG ENVIRONMENT: Mission + Vision + Values ===== -->
+    <div class="fog-environment">
+
+      <!-- MISSION + VISION -->
+        <div class="mv-section">
+
+            <div class="reveal" data-reveal-delay="0">
+                <span class="section-label">Propósito</span>
+                <h2 class="section-title">Nuestra razón de ser</h2>
+                <div class="section-rule"></div>
             </div>
 
-            <div class="pdf-embed-container">
-              <iframe
-                src="https://www.w3.org/WAI/WCAG21/Techniques/pdf/img/table-word.pdf"
-                title="Vista previa del documento PDF"
-                class="pdf-embed">
-              </iframe>
-              <div class="pdf-fallback">
-                <p>Tu navegador no puede mostrar el PDF directamente.</p>
-                <p>Usa los botones de abajo para ver o descargar el documento.</p>
-              </div>
-            </div>
+            <div class="mv-grid">
 
-            <div class="pdf-actions">
-              <a href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/img/table-word.pdf" target="_blank" class="btn btn-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
-                </svg>
-                Abrir en Nueva Pestaña
-              </a>
-              <a href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/img/table-word.pdf" download class="btn btn-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                </svg>
-                Descargar PDF
-              </a>
-            </div>
-          </div>
+                <!-- VISION flip card -->
+                <div class="flip-card reveal" data-reveal-delay="80" aria-label="Nuestra visión — pasa el cursor para leer">
+                    <div class="flip-inner">
 
-          <div class="materials-list">
-            <h3>Más Recursos Disponibles</h3>
-            <div class="material-item">
-              <div class="material-icon">📘</div>
-              <div class="material-info">
-                <h4>Manual de Organización Escolar</h4>
-                <p>Estrategias para organizar tareas, horarios y proyectos escolares.</p>
-              </div>
-              <a href="#" class="btn-small">Próximamente</a>
+                        <!-- Front: icon + title only -->
+                        <div class="flip-face flip-front">
+                            <div class="flip-icon-ring" aria-hidden="true">
+                    <!-- Eye icon -->
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <span class="flip-front-title">Nuestra visión</span>
+                            <span class="flip-hint" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+                                Pasa el cursor
+                            </span>
+                        </div>
+
+                        <!-- Back: full text -->
+                        <div class="flip-face flip-back" aria-hidden="true">
+                            <span class="flip-back-tag">Visión</span>
+                            <h3 class="flip-back-title">Nuestra visión</h3>
+                            <p class="flip-back-text">
+                                Ser un proyecto social líder en México, cuyos materiales didácticos sean
+                                utilizados por estudiantes en todos los estados, para reducir
+                                significativamente el porcentaje de deserción escolar nacional.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- MISSION flip card -->
+                <div class="flip-card reveal" data-reveal-delay="160" aria-label="Nuestra misión — pasa el cursor para leer">
+                    <div class="flip-inner">
+
+                        <!-- Front -->
+                        <div class="flip-face flip-front">
+                            <div class="flip-icon-ring" aria-hidden="true">
+                                <!-- Flag icon -->
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                                    <line x1="4" y1="22" x2="4" y2="15"/>
+                                </svg>
+                            </div>
+                            <span class="flip-front-title">Nuestra misión</span>
+                            <span class="flip-hint" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+                                Pasa el cursor
+                            </span>
+                        </div>
+
+                        <!-- Back -->
+                        <div class="flip-face flip-back" aria-hidden="true">
+                            <span class="flip-back-tag">Misión</span>
+                            <h3 class="flip-back-title">Nuestra misión</h3>
+                            <p class="flip-back-text">
+                                Combatir la deserción escolar y buscar la conclusión exitosa de los
+                                estudios, a través de un enfoque integral, en los niveles secundaria
+                                y preparatoria en México.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="material-item">
-              <div class="material-icon">📋</div>
-              <div class="material-info">
-                <h4>Plantillas de Planificación</h4>
-                <p>Calendarios y planificadores semanales para estudiantes.</p>
-              </div>
-              <a href="#" class="btn-small">Próximamente</a>
-            </div>
-            <div class="material-item">
-              <div class="material-icon">🎯</div>
-              <div class="material-info">
-                <h4>Guía de Metas Académicas</h4>
-                <p>Cómo establecer y alcanzar objetivos educativos realistas.</p>
-              </div>
-              <a href="#" class="btn-small">Próximamente</a>
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
-  </div>
 
+      <!-- VALUES -->
+      <div class="values-section">
+            <div class="values-header reveal" data-reveal-delay="0">
+                <div>
+                    <span class="section-label">Cultura</span>
+                    <h2 class="section-title" style="margin-bottom: 0;">Nuestros valores</h2>
+                </div>
+                <div class="values-header-rule" aria-hidden="true"></div>
+            </div>
+
+            <div class="values-grid" role="list" aria-label="Valores de Juntos logramos metas">
+
+                <!-- Responsabilidad -->
+                <div class="glass-card value-card reveal" data-reveal-delay="0" role="listitem">
+                    <div class="value-icon" aria-hidden="true">
+                        <!-- Shield-check -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                    </div>
+                    <span class="value-label">Responsabilidad</span>
+                </div>
+
+                <!-- Empatía -->
+                <div class="glass-card value-card reveal" data-reveal-delay="60" role="listitem">
+                    <div class="value-icon" aria-hidden="true">
+                        <!-- Heart -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <span class="value-label">Empatía</span>
+                </div>
+
+                <!-- Colaboración -->
+                <div class="glass-card value-card reveal" data-reveal-delay="120" role="listitem">
+                    <div class="value-icon" aria-hidden="true">
+                        <!-- Users -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <span class="value-label">Colaboración</span>
+                </div>
+
+                <!-- Calidad -->
+                <div class="glass-card value-card reveal" data-reveal-delay="180" role="listitem">
+                    <div class="value-icon" aria-hidden="true">
+                        <!-- Award -->
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                    <span class="value-label">Calidad</span>
+                </div>
+
+                <!-- Innovación -->
+                <div class="glass-card value-card reveal" data-reveal-delay="240" role="listitem">
+                    <div class="value-icon" aria-hidden="true">
+                        <!-- Lightbulb -->
+                        <svg viewBox="0 0 24 24">
+                            <line x1="9" y1="18" x2="15" y2="18"/>
+                            <line x1="10" y1="22" x2="14" y2="22"/>
+                            <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+                        </svg>
+                    </div>
+                    <span class="value-label">Innovación</span>
+                </div>
+
+        </div>
+      </div>
+
+    </div><!-- /fog-environment -->
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer"></footer>
   <script src="script.js"></script>
 </body>
 </html>
